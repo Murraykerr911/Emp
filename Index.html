@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Star & Music Simulation Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>Movie Star & Music Simulation Game</h1>
+      <div class="status">
+        <p>Level: <span id="level">1</span></p>
+        <p>Cash: $<span id="cash">100</span></p>
+        <p>Energy: <span id="energy">50</span></p>
+      </div>
+    </header>
+
+    <div class="actions">
+      <button id="performAction">Perform Action</button>
+      <button id="createMovie">Create Movie</button>
+      <button id="createMusicVideo">Create Music Video</button>
+      <button id="createSong">Create Song</button>
+      <button id="startProductionCompany">Start Production Company</button>
+    </div>
+
+    <div id="movieSection">
+      <h2>Create Movie</h2>
+      <input type="text" id="movieTitle" placeholder="Movie Title">
+      <input type="text" id="movieDirector" placeholder="Director">
+      <input type="text" id="movieDescription" placeholder="Movie Description">
+      <button id="addActor">Add Actor</button>
+      <ul id="movieActors"></ul>
+    </div>
+
+    <div id="musicVideoSection">
+      <h2>Create Music Video</h2>
+      <input type="text" id="musicVideoTitle" placeholder="Music Video Title">
+      <input type="text" id="musicVideoArtist" placeholder="Artist">
+      <input type="text" id="musicVideoDescription" placeholder="Video Description">
+      <button id="addMusicFeature">Add Featured Artist</button>
+      <ul id="musicVideoFeatures"></ul>
+    </div>
+
+    <div id="songSection">
+      <h2>Create Song</h2>
+      <input type="text" id="songTitle" placeholder="Song Title">
+      <input type="text" id="songArtist" placeholder="Artist">
+      <input type="text" id="songDescription" placeholder="Song Description">
+      <button id="addSongFeature">Add Featured Artist</button>
+      <ul id="songFeatures"></ul>
+    </div>
+
+    <div id="productionCompanySection">
+      <h2>Production Company</h2>
+      <p id="productionCompanyStatus">You don't have a production company yet.</p>
+      <button id="produceMovie">Produce Movie</button>
+      <div id="productionCompanyDetails">
+        <input type="text" id="companyName" placeholder="Company Name">
+        <textarea id="companyDescription" placeholder="Company Description"></textarea>
+        <button id="saveCompany">Save Company</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
